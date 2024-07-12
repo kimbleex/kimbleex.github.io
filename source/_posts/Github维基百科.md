@@ -2,7 +2,9 @@
 title: Github 维基百科！
 category: [Github]
 tags: [Github]
-photo: ../Photos/Github维基百科/logo.png
+# image: /Photos/Github维基百科/logo.png
+# thumbnail: ../Photos/Github维基百科/logo.jpg
+photos: ../Photos/Github维基百科/github-logo.png
 ---
 
 时维七月，序属二夏。
