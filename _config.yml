@@ -61,7 +61,7 @@ ignore: null
 theme: vivia
 deploy:
   type: git
-  repo: https://github.com/kimbleex/kimbleex.github.io.git
+  repo: git@github.com:kimbleex/kimbleex.github.io.git
   branch: master
 archive_generator:
   per_page: 0
