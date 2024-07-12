@@ -50,8 +50,8 @@ for i in tqdm(range(10), desc="这是一个进度条", ncols="80"):
 如果在循环过程中，还需要查看变量信息等，可以使用 `tqdm.write()`方法，它可以将循环中的变量进行输出。
 
 ```python
-for i in tqdm(range(10), desc="这是一个进度条", ncols="80"):
-	tqdm.write("当前为第{}次循环".format(i))
+for i in tqdm(range(10), desc="这是一个进度条", ncols=80):
+    tqdm.write("当前为第{}次循环".format(i))
     sleep(1)
 ```
 
@@ -60,8 +60,8 @@ for i in tqdm(range(10), desc="这是一个进度条", ncols="80"):
 至于 `trange`方法就是内置的封装好的 `tqdm`，即将 `tqdm`方法中的可迭代对象 `iterable`参数改为了可迭代对象的**长度**，其他基本一致。
 
 ```python
-for i in trange(10, desc="这是一个进度条", ncols="80"):
-	sleep(1)
+for i in trange(10, desc="这是一个进度条", ncols=80):
+    sleep(1)
 ```
 
 效果与上面展示的图片一致。
