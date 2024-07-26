@@ -24,7 +24,7 @@ hue: 250                         # 主题色调 (例如：红: 0，橙: 60，蓝
 # 个人信息
 avatar: /Photos/head.jpg                         # 头像图片文件路径，相对于 /source 目录
 author: Kimbleex
-subtitle: '升官发财请往他处'
+subtitle: '丢掉幻想，准备斗争'
 links:
   - name: Email
     icon: fa-solid fa-envelope     # 访问 https://fontawesome.com/search 获取图标代码
