@@ -27,16 +27,16 @@
 <meta property="og:site_name" content="Kimblee&#39;s Blogs">
 <meta property="og:description" content="使用Hexo搭建个人博客时，插图片总是无法被读取。在网上查找了很多资料，都是让你安装hexo-asset-image插件，并且将根目录下的配置文件中的post_asset_folder设置为true。然而，我的亲身实践经历证实了这并不管用。 我在一篇博客中引用了我source&#x2F;Photos&#x2F;目录下的图片。并且经过检查我的相对路径是完全正确的，但是在博客页面中出现了报错。 目录结构为：  网页端报错">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2020/03/11/1/Photos/1.Hexo_image_Process/sourceStruct.png">
-<meta property="og:image" content="http://example.com/2020/03/11/1/Photos/1.Hexo_image_Process/webError.png">
-<meta property="og:image" content="http://example.com/2020/03/11/1/Photos/1.Hexo_image_Process/hexo-asset-image-origin.png">
-<meta property="og:image" content="http://example.com/2020/03/11/1/Photos/1.Hexo_image_Process/result.png">
+<meta property="og:image" content="http://example.com/Photos/1.Hexo_image_Process/sourceStruct.png">
+<meta property="og:image" content="http://example.com/Photos/1.Hexo_image_Process/webError.png">
+<meta property="og:image" content="http://example.com/Photos/1.Hexo_image_Process/hexo-asset-image-origin.png">
+<meta property="og:image" content="http://example.com/Photos/1.Hexo_image_Process/result.png">
 <meta property="article:published_time" content="2020-03-10T16:00:00.000Z">
 <meta property="article:modified_time" content="2024-08-02T08:05:23.843Z">
 <meta property="article:author" content="Kimbleex">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/03/11/1/Photos/1.Hexo_image_Process/sourceStruct.png">
+<meta name="twitter:image" content="http://example.com/Photos/1.Hexo_image_Process/sourceStruct.png">
   
     <link rel="alternate" href="/atom.xml" title="Kimblee's Blogs" type="application/atom+xml">
   
@@ -332,20 +332,20 @@
           <p>使用Hexo搭建个人博客时，插图片总是无法被读取。在网上查找了很多资料，都是让你安装<code>hexo-asset-image</code>插件，并且将根目录下的配置文件中的<code>post_asset_folder</code>设置为<code>true</code>。然而，我的亲身实践经历证实了这并不管用。</p>
 <p>我在一篇博客中引用了我<code>source/Photos/</code>目录下的图片。并且经过检查我的相对路径是完全正确的，但是在博客页面中出现了报错。</p>
 <p>目录结构为：</p>
-<p><img src="/2020/03/11/1/Photos/1.Hexo_image_Process/sourceStruct.png" alt="目录结构"></p>
+<p><img src="/../Photos/1.Hexo_image_Process/sourceStruct.png" alt="目录结构"></p>
 <p>网页端报错为：</p>
-<p><img src="/2020/03/11/1/Photos/1.Hexo_image_Process/webError.png" alt="网页端报错"></p>
+<p><img src="/../Photos/1.Hexo_image_Process/webError.png" alt="网页端报错"></p>
 <p>可以看到，我的本地目录经过指令<code>hexo deploy -d</code>构建后，网页读取的图片地址是<code>https://kimbleex.github.io/.com//Photos/Github_Commands/get-github-links.jpg</code>，相比于正确的应该被读取的地址<code>/Photos/Github_Commands/get-github-links.jpg</code>，多出了两个前缀，还多出了一个<code>/</code>，这显然是地址转化的过程中的问题。</p>
 <p>OK事情又回到了本源，我在插入图片时，为了让hexo自动转化图片的地址，下载了<code>hexo-asset-image</code>插件，现在地址出现了问题，这显然是它的锅。</p>
 <p>于是，我打开了这个插件的代码，仔细琢磨了它的代码逻辑，果然发现了罪魁祸首。</p>
-<p><img src="/2020/03/11/1/Photos/1.Hexo_image_Process/hexo-asset-image-origin.png" alt="原始代码"></p>
+<p><img src="/../Photos/1.Hexo_image_Process/hexo-asset-image-origin.png" alt="原始代码"></p>
 <p>在<code>node_modules/hexo-asset-image/index.js</code>中，它给图片路径长度大于1的路径增加了一个<code>/</code>，并且在转换路径的过程中加入了<code>root</code>和<code>link</code>前缀，这不就是我们网页端报错的问题所在吗？</p>
 <p>于是，按照正确的地址路径，修改<code>node_modules/hexo-asset-image/index.js</code>中的路径转换逻辑。</p>
 <p>修改后的代码片段如下：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将原来的逻辑代码注释掉，如下所示，并将最后的代码转换逻辑修改为正确的图片路径 </span></span><br><span class="line"></span><br><span class="line"><span class="comment">// if(srcArray.length &gt; 1)</span></span><br><span class="line"><span class="comment">// srcArray.shift();</span></span><br><span class="line"><span class="comment">// src = srcArray.join(&#x27;/&#x27;);</span></span><br><span class="line"><span class="comment">// $(this).attr(&#x27;src&#x27;, config.root + link + src);</span></span><br><span class="line"><span class="comment">// console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);            </span></span><br><span class="line">$(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&#x27;src&#x27;</span>,  src);</span><br><span class="line"><span class="variable language_">console</span>.<span class="property">info</span>&amp;&amp;<span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&quot;update link as:--&gt;&quot;</span>+ src);</span><br></pre></td></tr></table></figure>
 
 <p>修改后，重新部署，图片可以正常显示。</p>
-<p><img src="/2020/03/11/1/Photos/1.Hexo_image_Process/result.png" alt="修改后"></p>
+<p><img src="/../Photos/1.Hexo_image_Process/result.png" alt="修改后"></p>
 
         
       </div>
