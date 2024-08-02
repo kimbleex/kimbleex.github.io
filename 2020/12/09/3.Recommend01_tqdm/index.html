@@ -27,14 +27,14 @@
 <meta property="og:site_name" content="Kimblee&#39;s Blogs">
 <meta property="og:description" content="在开发过程中，尤其是深度学习或者时数据处理时，程序长时间的运行总是会让广大程序员产生怀疑、后怕、自卑、发毛的情绪。因此，在程序设计中加入进度条就显得很有必要了。 1. tqdm的安装安装很容易，进入到工作环境直接安装，如果不分环境就全局安装即可。 1pip install tqdm  2. 导入 tqdm 注意：踩坑记录，导入并非直接导入包名，否则会报错。 1from tqdm import tq">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2020/12/09/3/Photos/3.tqdm-process-letter.png">
+<meta property="og:image" content="http://example.com/2020/12/09/3/Photos/3.Recommend01_tqdm/tqdm-process-letter.png">
 <meta property="og:image" content="http://example.com/2020/12/09/3/Photos/3.Recommend01_tqdm/tqdm-write.png">
 <meta property="article:published_time" content="2020-12-08T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-08-02T08:15:06.963Z">
+<meta property="article:modified_time" content="2024-08-02T08:16:57.989Z">
 <meta property="article:author" content="Kimbleex">
 <meta property="article:tag" content="Good Tools">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/12/09/3/Photos/3.tqdm-process-letter.png">
+<meta name="twitter:image" content="http://example.com/2020/12/09/3/Photos/3.Recommend01_tqdm/tqdm-process-letter.png">
   
     <link rel="alternate" href="/atom.xml" title="Kimblee's Blogs" type="application/atom+xml">
   
@@ -337,7 +337,7 @@
 <h3 id="3-tqdm的使用"><a href="#3-tqdm的使用" class="headerlink" title="3. tqdm的使用"></a>3. <code>tqdm</code>的使用</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm, trange</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> sleep</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">参数说明：(带*号的默认不填即可)</span></span><br><span class="line"><span class="string">    iterable，   需要传入的可迭代对象，作为整体进度条的尺。</span></span><br><span class="line"><span class="string">    desc，       进度条的描述内容。</span></span><br><span class="line"><span class="string">    ncols，      进度条的长度，可认为更改，建议更改为合适终端的长度。</span></span><br><span class="line"><span class="string">    *total，     迭代次数，默认为iterable的长度。</span></span><br><span class="line"><span class="string">    *leave，     布尔值，表示是否保留进度条。</span></span><br><span class="line"><span class="string">    *file，      进度条保存路径，默认保留在终端即可。</span></span><br><span class="line"><span class="string">    *unit，      迭代内容的迭代单位，默认为it(代)。</span></span><br><span class="line"><span class="string">    *postfix，   可传入的详细数据。</span></span><br><span class="line"><span class="string">    *unit_scale，单位换算尺度，默认是国际标准换算。</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 使用tqdm展示进度条</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tqdm(<span class="built_in">range</span>(<span class="number">10</span>), desc=<span class="string">&quot;这是一个进度条&quot;</span>, ncols=<span class="number">80</span>):</span><br><span class="line">    sleep(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 
 <p>效果展示如下：</p>
-<p><img src="/2020/12/09/3/Photos/3.tqdm-process-letter.png" alt="tqdm"></p>
+<p><img src="/2020/12/09/3/Photos/3.Recommend01_tqdm/tqdm-process-letter.png" alt="tqdm"></p>
 <p>如果在循环过程中，还需要查看变量信息等，可以使用 <code>tqdm.write()</code>方法，它可以将循环中的变量进行输出。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tqdm(<span class="built_in">range</span>(<span class="number">10</span>), desc=<span class="string">&quot;这是一个进度条&quot;</span>, ncols=<span class="number">80</span>):</span><br><span class="line">    tqdm.write(<span class="string">&quot;当前为第&#123;&#125;次循环&quot;</span>.<span class="built_in">format</span>(i))</span><br><span class="line">    sleep(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 
