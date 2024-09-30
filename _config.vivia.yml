@@ -22,7 +22,7 @@ hue: 250                         # 主题色调 (例如：红: 0，橙: 60，蓝
                                  # 可访问 `saicaca.github.io/vivia-preview` 预览颜色设置
 
 # 个人信息
-avatar: /Photos/head.jpg                         # 头像图片文件路径，相对于 /source 目录
+avatar: /Photos/head1.jpg                         # 头像图片文件路径，相对于 /source 目录
 author: Kimbleex
 subtitle: '丢掉幻想，准备斗争'
 links:
@@ -56,9 +56,9 @@ categories:
 # 第三方评论系统
 comment:
   valine:
-    enable: true         # 是否启用 Valine 评论系统
-    appId: BGYzLDF38xtPIJ5S1h2LC7kO-gzGzoHsz
-    appKey: Ws0jFvhqe18fRhMa9QEnNGgb
+    enable: false         # 是否启用 Valine 评论系统
+    appId: 
+    appKey: 
     placeholder: Say something ...
     pageSize: 10
     highlight: true
@@ -67,11 +67,11 @@ comment:
     # 可在此添加其他 Valine 支持的配置项
     # 详见 https://valine.js.org/configuration.html
   twikoo:
-    enable: false           # 是否启用 Twikoo 评论系统
-    envID:
-    region:
-    path: location.pathname
-    lang:
+    enable: true           # 是否启用 Twikoo 评论系统
+    envID: https://www.kimbleex.top
+    region: 
+    path: 
+    lang: 
     # 详见 https://github.com/imaegoo/twikoo
   waline:
     enable: false          # 是否启用 Waline 评论系统
