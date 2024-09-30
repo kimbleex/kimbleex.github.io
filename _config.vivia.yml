@@ -68,7 +68,7 @@ comment:
     # 详见 https://valine.js.org/configuration.html
   twikoo:
     enable: true           # 是否启用 Twikoo 评论系统
-    envID: https://www.kimbleex.top
+    envID: https://twikoo.kimbleex.top
     region: 
     path: 
     lang: 
