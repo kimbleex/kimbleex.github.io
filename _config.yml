@@ -1,8 +1,8 @@
-title: Kimblee's Blogs
-subtitle: Welcome~
+title: kimbleex Blogs
+subtitle: 丢掉幻想，准备斗争！
 description: ''
 keywords: null
-author: Kimbleex
+author: kimbleex
 language: zh-CN
 timezone: ''
 url: http://example.com
@@ -58,10 +58,27 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: vivia
+theme: anzhiyu
 deploy:
   type: git
   repo: git@github.com:kimbleex/kimbleex.github.io.git
   branch: master
 archive_generator:
   per_page: 0
+algolia:
+  appId: "1W6QCJAGAL"
+  apiKey: "4f511d2891adb0ae34327f461f0bfd31"
+  adminApiKey: "bde523a5dab64027033f9cffb6280baa"
+  chunkSize: 2000
+  indexName: "hexo"
+  fields:
+    - content:strip:truncate,0,200
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
+# plugins:
+#   - hexo-algoliasearch
