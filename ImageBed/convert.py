@@ -8,11 +8,11 @@ import pillow_avif       # pillow-avif-plugin        1.2.2
 # AVIFimg = Image.open(AVIFfilename)
 # AVIFimg.save(AVIFfilename.replace("avif",'jpg'),'JPEG')
 # #也可以是png等任意格式，但是转换的png有点大
-path = ["./Cover_unused/"]
-# os.listdir(path[0])
-# print(os.listdir(path[0]))
-for i in os.listdir(path[0]):
+
+# path = ["./Cover_unused/"]
+# for i in os.listdir(path[0]):
     
-    path_ = path[0] + i
-    img = Image.open(path_)
-    img.save(path_.replace("png",'avif'),'AVIF')
+# path_ = path[0] + i
+path_ = r"./THEME\anzhiyu\LeaveWords\cover.png"
+img = Image.open(path_)
+img.save(path_.replace("png",'avif'),'AVIF')
