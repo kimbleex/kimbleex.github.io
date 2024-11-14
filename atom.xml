@@ -23,13 +23,13 @@
     <published>2024-11-13T16:00:00.000Z</published>
     <updated>2024-11-13T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p>官方开源仓库: <img src="https://github.com/massgravel/Microsoft-Activation-Scripts" alt="Microsoft-Activation-Scripts"></p><p>这是一个利用硬件ID激活的办法, 激活后一劳永逸, 即使重装系统也不需要再激活, 但是需要保持硬件不变。</p><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>打开<code>Windwos PowerShell</code>, 输入以下命令(<strong>注意不是<code>CMD</code></strong>):</p><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">irm</span> https://get.activated.win | <span class="built_in">iex</span></span><br></pre></td></tr></table></figure><p>输入完成后回车，会弹出一个新界面，在新界面中选择你需要激活的内容即可。</p><ul><li>选项: <code>[1] HWID</code>用于激活<code>Windows</code></li><li>选项: <code>[2] Ohook</code>用于激活<code>Office</code></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>官方开源仓库: <a href="https://github.com/massgravel/Microsoft-Activation-Scripts">Microsoft-Activation-Scripts</a></p><p>这是一个利用硬件ID激活的办法, 激活后一劳永逸, 即使重装系统也不需要再激活, 但是需要保持硬件不变。</p><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>打开<code>Windwos PowerShell</code>, 输入以下命令(<strong>注意不是<code>CMD</code></strong>):</p><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">irm</span> https://get.activated.win | <span class="built_in">iex</span></span><br></pre></td></tr></table></figure><p>输入完成后回车，会弹出一个新界面，在新界面中选择你需要激活的内容即可。</p><ul><li>选项: <code>[1] HWID</code>用于激活<code>Windows</code></li><li>选项: <code>[2] Ohook</code>用于激活<code>Office</code></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;官方开源仓库: &lt;img src=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot; alt=&quot;Microsoft-Activation-Scripts&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这是一个利用硬件ID激活的办法,</summary>
+    <summary type="html">&lt;p&gt;官方开源仓库: &lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;Microsoft-Activation-Scripts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这是一个利用硬件ID激活的办法, 激活后</summary>
       
     
     
