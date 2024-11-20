@@ -91,11 +91,11 @@
     
     <category term="Docker" scheme="http://xujunliang666.com/tags/Docker/"/>
     
-    <category term="PostgreSQL" scheme="http://xujunliang666.com/tags/PostgreSQL/"/>
-    
     <category term="Prisma" scheme="http://xujunliang666.com/tags/Prisma/"/>
     
     <category term="TypeScript" scheme="http://xujunliang666.com/tags/TypeScript/"/>
+    
+    <category term="DataBase" scheme="http://xujunliang666.com/tags/DataBase/"/>
     
   </entry>
   
@@ -271,6 +271,33 @@
     <category term="Linux" scheme="http://xujunliang666.com/tags/Linux/"/>
     
     <category term="Arch" scheme="http://xujunliang666.com/tags/Arch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一些很方便但是容易忘记的SQL语句</title>
+    <link href="http://xujunliang666.com/School/Useful-SQL/"/>
+    <id>http://xujunliang666.com/School/Useful-SQL/</id>
+    <published>2023-02-18T16:00:00.000Z</published>
+    <updated>2023-02-18T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>有一些方便数据库操作的<code>SQL</code>语句，它可以简化一些代码。总是或多或少忘记，记录一下。</p><p>我这里拿一个<code>students</code>表举例，表结构如下：</p><div class="table-container"><table><thead><tr><th>id</th><th>class_id</th><th>name</th><th>gender</th><th>score</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>张三</td><td>男</td><td>90</td></tr><tr><td>2</td><td>1</td><td>李四</td><td>男</td><td>85</td></tr><tr><td>3</td><td>2</td><td>王五</td><td>女</td><td>95</td></tr><tr><td>4</td><td>2</td><td>赵六</td><td>女</td><td>88</td></tr></tbody></table></div><h2 id="插入或替换"><a href="#插入或替换" class="headerlink" title="插入或替换"></a>插入或替换</h2><p>如果我们希望插入一条新记录<code>INSERT</code>，但如果记录已经存在，就先删除原记录，再插入新记录。此时，可以使用<code>REPLACE</code>语句，这样就不必先查询，再决定是否先删除再插入。</p><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">REPLACE <span class="keyword">INTO</span> students (id, class_id, name, gender, score) <span class="keyword">VALUES</span> (<span class="number">1</span>, <span class="number">1</span>, <span class="string">&#x27;小明&#x27;</span>, <span class="string">&#x27;F&#x27;</span>, <span class="number">99</span>);</span><br></pre></td></tr></table></figure><p>若<code>id=1</code>的记录不存在，<code>REPLACE</code>语句将插入新记录，否则，当前<code>id=1</code>的记录将被删除，然后再插入新记录。</p><h2 id="插入或更新"><a href="#插入或更新" class="headerlink" title="插入或更新"></a>插入或更新</h2><p>如果我们希望插入一条新记录<code>INSERT</code>，但如果记录已经存在，就啥事也不干直接忽略，此时，可以使用<code>INSERT IGNORE INTO ...</code>语句。</p><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> students (id, class_id, name, gender, score) <span class="keyword">VALUES</span> (<span class="number">1</span>, <span class="number">1</span>, <span class="string">&#x27;小明&#x27;</span>, <span class="string">&#x27;F&#x27;</span>, <span class="number">99</span>) <span class="keyword">ON</span> DUPLICATE KEY <span class="keyword">UPDATE</span> name<span class="operator">=</span><span class="string">&#x27;小明&#x27;</span>, gender<span class="operator">=</span><span class="string">&#x27;F&#x27;</span>, score<span class="operator">=</span><span class="number">99</span>;</span><br></pre></td></tr></table></figure><p>若<code>id=1</code>的记录不存在，<code>INSERT</code>语句将插入新记录，否则，当前<code>id=1</code>的记录将被更新，更新的字段由<code>UPDATE</code>指定。</p><h2 id="插入或忽略"><a href="#插入或忽略" class="headerlink" title="插入或忽略"></a>插入或忽略</h2><p>如果我们希望插入一条新记录<code>INSERT</code>，但如果记录已经存在，就啥事也不干直接忽略，此时，可以使用<code>INSERT IGNORE INTO ...</code>语句.</p><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> IGNORE <span class="keyword">INTO</span> students (id, class_id, name, gender, score) <span class="keyword">VALUES</span> (<span class="number">1</span>, <span class="number">1</span>, <span class="string">&#x27;小明&#x27;</span>, <span class="string">&#x27;F&#x27;</span>, <span class="number">99</span>);</span><br></pre></td></tr></table></figure><p>若<code>id=1</code>的记录不存在，<code>INSERT</code>语句将插入新记录，否则，不执行任何操作。</p><h2 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h2><p>如果想要对一个表进行快照，即复制一份当前表的数据到一个新表，可以结合<code>CREATE TABLE</code>和<code>SELECT</code>。</p><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> students_of_class1 <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> class_id<span class="operator">=</span><span class="number">1</span>;</span><br></pre></td></tr></table></figure><h2 id="写入查询结果集"><a href="#写入查询结果集" class="headerlink" title="写入查询结果集"></a>写入查询结果集</h2><p>如果查询结果集需要写入到表中，可以结合<code>INSERT</code>和<code>SELECT</code>，将<code>SELECT</code>语句的结果集直接插入到指定表中。</p><p>例如，创建一个统计成绩的表<code>statistics</code>，记录各班的平均成绩。</p><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> statistics (</span><br><span class="line">    id <span class="type">BIGINT</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> AUTO_INCREMENT,</span><br><span class="line">    class_id <span class="type">BIGINT</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    average <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (id)</span><br><span class="line">);</span><br></pre></td></tr></table></figure><p>然后，我们就可以用一条语句写入各班的平均成绩。</p><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> statistics (class_id, average) <span class="keyword">SELECT</span> class_id, <span class="built_in">AVG</span>(score) <span class="keyword">FROM</span> students <span class="keyword">GROUP</span> <span class="keyword">BY</span> class_id;</span><br></pre></td></tr></table></figure><p>确保<code>INSERT</code>语句的列和<code>SELECT</code>语句的列能一一对应，就可以在<code>statistics</code>表中直接保存查询的结果。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;有一些方便数据库操作的&lt;code&gt;SQL&lt;/code&gt;语句，它可以简化一些代码。总是或多或少忘记，记录一下。&lt;/p&gt;
+&lt;p&gt;我这里拿一个&lt;code&gt;students&lt;/code&gt;表举例，表结构如下：&lt;/p&gt;
+&lt;div class=&quot;table-container&quot;&gt;
+&lt;ta</summary>
+      
+    
+    
+    
+    <category term="School" scheme="http://xujunliang666.com/categories/School/"/>
+    
+    
+    <category term="DataBase" scheme="http://xujunliang666.com/tags/DataBase/"/>
     
   </entry>
   
