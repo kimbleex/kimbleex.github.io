@@ -187,9 +187,9 @@
     
     <category term="Async" scheme="http://xujunliang666.com/tags/Async/"/>
     
-    <category term="Multi-Threading" scheme="http://xujunliang666.com/tags/Multi-Threading/"/>
+    <category term="MultiThreading" scheme="http://xujunliang666.com/tags/MultiThreading/"/>
     
-    <category term="Multi-Processing" scheme="http://xujunliang666.com/tags/Multi-Processing/"/>
+    <category term="MultiProcessing" scheme="http://xujunliang666.com/tags/MultiProcessing/"/>
     
   </entry>
   
@@ -354,13 +354,13 @@
     
     <category term="Selenium" scheme="http://xujunliang666.com/tags/Selenium/"/>
     
-    <category term="Auto-Test" scheme="http://xujunliang666.com/tags/Auto-Test/"/>
-    
     <category term="Spider" scheme="http://xujunliang666.com/tags/Spider/"/>
     
-    <category term="Data-Analyse" scheme="http://xujunliang666.com/tags/Data-Analyse/"/>
-    
     <category term="Visualization" scheme="http://xujunliang666.com/tags/Visualization/"/>
+    
+    <category term="AutoTest" scheme="http://xujunliang666.com/tags/AutoTest/"/>
+    
+    <category term="DataAnalyse" scheme="http://xujunliang666.com/tags/DataAnalyse/"/>
     
   </entry>
   
@@ -443,9 +443,9 @@
     
     <category term="Selenium" scheme="http://xujunliang666.com/tags/Selenium/"/>
     
-    <category term="Auto-Test" scheme="http://xujunliang666.com/tags/Auto-Test/"/>
-    
     <category term="Spider" scheme="http://xujunliang666.com/tags/Spider/"/>
+    
+    <category term="AutoTest" scheme="http://xujunliang666.com/tags/AutoTest/"/>
     
   </entry>
   
@@ -474,7 +474,7 @@
     
     <category term="Selenium" scheme="http://xujunliang666.com/tags/Selenium/"/>
     
-    <category term="Auto-Test" scheme="http://xujunliang666.com/tags/Auto-Test/"/>
+    <category term="AutoTest" scheme="http://xujunliang666.com/tags/AutoTest/"/>
     
   </entry>
   
