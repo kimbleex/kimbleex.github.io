@@ -187,11 +187,9 @@
     
     <category term="Async" scheme="http://xujunliang666.com/tags/Async/"/>
     
-    <category term="异步编程" scheme="http://xujunliang666.com/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
+    <category term="Multi-Threading" scheme="http://xujunliang666.com/tags/Multi-Threading/"/>
     
-    <category term="多线程" scheme="http://xujunliang666.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    <category term="多进程" scheme="http://xujunliang666.com/tags/%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
+    <category term="Multi-Processing" scheme="http://xujunliang666.com/tags/Multi-Processing/"/>
     
   </entry>
   
