@@ -6,7 +6,7 @@
   <link href="http://xujunliang666.com/atom.xml" rel="self"/>
   
   <link href="http://xujunliang666.com/"/>
-  <updated>2024-11-18T16:00:00.000Z</updated>
+  <updated>2024-11-19T16:00:00.000Z</updated>
   <id>http://xujunliang666.com/</id>
   
   <author>
@@ -17,18 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>关于新图片格式AVIF和Pillow格式转换方法</title>
-    <link href="http://xujunliang666.com/Programming/AVIF-Pillow/"/>
-    <id>http://xujunliang666.com/Programming/AVIF-Pillow/</id>
-    <published>2024-11-18T16:00:00.000Z</published>
-    <updated>2024-11-18T16:00:00.000Z</updated>
+    <title>Corn调度任务表达式写法笔记</title>
+    <link href="http://xujunliang666.com/Programming/Corn/"/>
+    <id>http://xujunliang666.com/Programming/Corn/</id>
+    <published>2024-11-19T16:00:00.000Z</published>
+    <updated>2024-11-19T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p><code>AVIF (AV1 Image File Format)</code>是一种现代图像格式, 基于<code>AV1</code>视频编码技术。它由<code>Alliance for Open Media</code>开发, 旨在提供高效的图像压缩, 同时保持优良的图像质量。</p><h2 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h2><p><code>AVIF</code>源于<code>AV1</code>视频编码格式, 这是一种开源、免版税的视频编码格式, 旨在替代<code>VP9</code>和<code>H.264</code>。<code>AVIF</code>利用<code>AV1</code>的压缩技术来处理静态图像和图像序列, 提供高效的图像存储和传输。</p><h2 id="AVIF格式的特点和优势"><a href="#AVIF格式的特点和优势" class="headerlink" title="AVIF格式的特点和优势"></a>AVIF格式的特点和优势</h2><ul><li>高压缩效率: <code>AVIF</code>具有出色的压缩效率, 能够在较小的文件大小下提供优质的图像质量。这使得它在带宽和存储有限的情况下非常有用。</li><li>支持<code>HDR</code>: <code>AVIF</code>支持高动态范围<code>HDR</code>图像, 能够呈现更丰富的色彩和对比度。</li><li>色彩深度: 支持8位、10位和12位色深, 能够更好地处理复杂的色彩信息。</li><li>透明度: 支持透明度通道, 使其适用于需要透明背景的图像。</li><li>动画支持: <code>AVIF</code>支持动画, 与<code>GIF</code>和<code>APNG</code>相比, 提供了更高效的动画压缩。</li></ul><h2 id="与其他格式的比较"><a href="#与其他格式的比较" class="headerlink" title="与其他格式的比较"></a>与其他格式的比较</h2><ul><li><code>JPEG</code>: <code>AVIF</code>在相同图像质量下通常比<code>JPEG</code>文件小得多, 并且支持更高的色彩深度和透明度。</li><li><code>PNG</code>: 虽然<code>PNG</code>支持无损压缩和透明度, 但<code>AVIF</code>在有损压缩情况下提供了更小的文件大小。</li><li><code>WebP</code>: <code>AVIF</code>通常比<code>WebP</code>提供更高的压缩效率, 尤其是在处理高分辨率图像时。</li><li><code>HEIC</code>: <code>AVIF</code>与<code>HEIC</code>相似, 但<code>AVIF</code>是免版税的, 而<code>HEIC</code>可能涉及专利许可问题。</li></ul><h2 id="兼容性（截至2024年）"><a href="#兼容性（截至2024年）" class="headerlink" title="兼容性（截至2024年）"></a>兼容性（截至2024年）</h2><div class="note success no-icon % } {% label 浏览器支持 green flat"><ul><li><code>Google Chrome</code>: 支持。</li><li><code>Mozilla Firefox</code>: 支持。</li><li><code>Microsoft Edge</code>: 支持。</li><li><code>Safari</code>: 从<code>Safari 16</code>开始支持, 但支持可能不如其他浏览器全面。</li></ul></div><div class="note success no-icon % } {% label 操作系统支持 green flat"><ul><li><code>Windows</code>: <code>Windows 10</code>及以上已通过系统更新支持。</li><li><code>macOS</code>: 从<code>macOS Ventura</code>开始支持。</li><li><code>Android</code>: 较新的<code>Android</code>版本支持。</li><li><code>iOS</code>: 从<code>iOS 16</code>开始支持。</li></ul></div><p>总结<br><code>AVIF</code>作为一种现代图像格式, 提供了卓越的压缩效率和图像质量, 逐渐被主流浏览器和操作系统采纳。随着技术的进步和普及, <code>AVIF</code>有望成为广泛使用的图像格式之一。</p><h2 id="Pillow库实现AVIF格式转换"><a href="#Pillow库实现AVIF格式转换" class="headerlink" title="Pillow库实现AVIF格式转换"></a>Pillow库实现AVIF格式转换</h2><p><code>Pillow</code>是一个强大的Python图像处理库, 支持多种图像格式, 包括<code>AVIF</code>。通过<code>Pillow</code>, 可以轻松实现<code>AVIF</code>与其他图像格式的相互转换。</p><h3 id="安装Pillow库"><a href="#安装Pillow库" class="headerlink" title="安装Pillow库"></a>安装Pillow库</h3><p>在开始之前, 需要确保已安装<code>Pillow</code>库以及<code>pillow-avif-plugin</code>库。可以使用以下命令安装:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install Pillow pillow-avif-plugin</span><br></pre></td></tr></table></figure><h3 id="AVIF格式转换为其他格式"><a href="#AVIF格式转换为其他格式" class="headerlink" title="AVIF格式转换为其他格式"></a>AVIF格式转换为其他格式</h3><p>以下是一个示例, 将<code>AVIF</code>格式转换为其他格式:</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image    <span class="comment"># Pillow                    9.0.0</span></span><br><span class="line"><span class="keyword">import</span> pillow_avif       <span class="comment"># pillow-avif-plugin        1.2.2</span></span><br><span class="line"><span class="comment">#以上只是其中一个可用版本，并非必须</span></span><br><span class="line"></span><br><span class="line">AVIFfilename = <span class="string">&#x27;test.avif&#x27;</span></span><br><span class="line">AVIFimg = Image.<span class="built_in">open</span>(AVIFfilename)</span><br><span class="line"><span class="comment"># 将AVIF格式转换为JPEG格式，当然其他格式都可以</span></span><br><span class="line">AVIFimg.save(AVIFfilename.replace(<span class="string">&quot;avif&quot;</span>,<span class="string">&#x27;jpg&#x27;</span>),<span class="string">&#x27;JPEG&#x27;</span>)</span><br></pre></td></tr></table></figure><p>当然, 也可以将其他格式转为<code>AVIF</code>格式:</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image    <span class="comment"># Pillow                    9.0.0</span></span><br><span class="line"><span class="keyword">import</span> pillow_avif       <span class="comment"># pillow-avif-plugin        1.2.2</span></span><br><span class="line"><span class="comment">#以上只是其中一个可用版本，并非必须</span></span><br><span class="line"></span><br><span class="line">img_path_ = <span class="string">&quot;./test.png&quot;</span></span><br><span class="line">img = Image.<span class="built_in">open</span>(path_)</span><br><span class="line">img.save(path_.replace(<span class="string">&quot;jpg&quot;</span>,<span class="string">&#x27;avif&#x27;</span>),<span class="string">&#x27;AVIF&#x27;</span>)</span><br></pre></td></tr></table></figure><p>转换完成后，我们可以在根目录看到转换完成后的文件，文件名后缀为<code>.avif</code>。<br><img src="https://images.kimbleex.top/BlogIMG/AVIF_Pillow/converted.avif" alt="图片转换完成"></p><p>我们可以在文件管理器中比较转换前后的图片大小。<br><img src="https://images.kimbleex.top/BlogIMG/AVIF_Pillow/size_compare.avif" alt="图片大小比较"><br>可以看到，转换后的图片大小明显小于转换前的图片大小。由此可见，<code>AVIF</code>格式具有更高的压缩效率。</p><p>最后让我们从视觉上感受两张图片的差距。<br><img src="https://images.kimbleex.top/BlogIMG/AVIF_Pillow/vis_compare.avif" alt="图片对比"><br>可以看到，转换前后的图片几乎没有什么差别，说明<code>AVIF</code>格式在保持图像质量的同时，也具有很高的压缩效率。</p>]]></content>
+    <content type="html"><![CDATA[<p>起因是写<code>Github</code>主页的时候，突发奇想打算设置<code>Action</code>来定时推送仓库，于是就涉及到了Corn调度任务表达式写法，记录一下。</p><h2 id="Corn规范"><a href="#Corn规范" class="headerlink" title="Corn规范"></a><code>Corn</code>规范</h2><p>Corn表达式由6个字段组成，每个字段之间用空格分隔，格式如下：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">*  *  *  *  *  *  *</span><br><span class="line">                  |____ 星期， 数值为0-6，周日为0，也可以使用星期缩写，比如mon等</span><br><span class="line">               |_______ 月份， 数值为1-12，也可以使用月份缩写，比如jan等</span><br><span class="line">            |__________ 日期， 数值为1-31</span><br><span class="line">         |_____________ 小时， 数值为0-23</span><br><span class="line">   |___________________ 分钟， 数值为0-59</span><br><span class="line">|______________________ 秒钟， 数值为0-59，**可选字段**</span><br></pre></td></tr></table></figure><h2 id="其他符号支持"><a href="#其他符号支持" class="headerlink" title="其他符号支持"></a>其他符号支持</h2><p>除了上面的基础字段写法，<code>Corn</code>还支持一些符号</p><ul><li>星号(*) 表示匹配任意值，即全部值 。例如，* 在分钟字段中表示每分钟都执行。</li><li>逗号(,) 用于分隔多个值。例如，1,3,5 在小时字段中表示 1 点、3 点和 5 点执行。</li><li>斜线(/) 用于指定间隔值。例如，*/5 在分钟字段中表示每 5 分钟执行一次。</li><li>连字符(-) 用于指定范围。例如，10-20 在日期字段中表示从 10 号到 20 号。</li><li>问号(?) 仅用于日期和星期几字段，表示不指定具体值。通常用于避免冲突。</li></ul><h2 id="一些例子"><a href="#一些例子" class="headerlink" title="一些例子"></a>一些例子</h2><div class="note success no-icon flat"><p><mark class="hl-label green">每分钟执行一次</mark><br>0 * * * * *</p></div><div class="note warning no-icon flat"><p><mark class="hl-label orange">每天上午9点执行一次</mark><br>0 0 9 * * *</p></div><div class="note primary no-icon flat"><p><mark class="hl-label purple">每周一上午10点执行一次</mark><br>0 0 10 * * mon</p></div><div class="note danger no-icon flat"><p><mark class="hl-label red">每个月10-20号的每天8点执行一次</mark><br>0 0 8 10-20 * *</p></div><div class="note success no-icon flat"><p><mark class="hl-label green">每两个小时执行一次</mark><br>0 0 <em>/2 \</em> * *</p></div><h2 id="一些注意"><a href="#一些注意" class="headerlink" title="一些注意"></a>一些注意</h2><p>上面说到秒钟单位是可以省略的，所以在写表达式时，可以直接省略秒的那一位。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;code&gt;AVIF (AV1 Image File Format)&lt;/code&gt;是一种现代图像格式, 基于&lt;code&gt;AV1&lt;/code&gt;视频编码技术。它由&lt;code&gt;Alliance for Open Media&lt;/code&gt;开发, 旨在提供高效的图像压缩, 同时保持优</summary>
+    <summary type="html">&lt;p&gt;起因是写&lt;code&gt;Github&lt;/code&gt;主页的时候，突发奇想打算设置&lt;code&gt;Action&lt;/code&gt;来定时推送仓库，于是就涉及到了Corn调度任务表达式写法，记录一下。&lt;/p&gt;
+&lt;h2 id=&quot;Corn规范&quot;&gt;&lt;a href=&quot;#Corn规范&quot; class=&quot;h</summary>
       
     
     
@@ -36,9 +37,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
+    <category term="Linux" scheme="http://xujunliang666.com/tags/Linux/"/>
     
-    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    <category term="Schedule" scheme="http://xujunliang666.com/tags/Schedule/"/>
     
   </entry>
   
@@ -64,6 +65,32 @@
     
     
     <category term="工具" scheme="http://xujunliang666.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于新图片格式AVIF和Pillow格式转换方法</title>
+    <link href="http://xujunliang666.com/Programming/AVIF-Pillow/"/>
+    <id>http://xujunliang666.com/Programming/AVIF-Pillow/</id>
+    <published>2024-11-12T16:00:00.000Z</published>
+    <updated>2024-11-12T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>AVIF (AV1 Image File Format)</code>是一种现代图像格式, 基于<code>AV1</code>视频编码技术。它由<code>Alliance for Open Media</code>开发, 旨在提供高效的图像压缩, 同时保持优良的图像质量。</p><h2 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h2><p><code>AVIF</code>源于<code>AV1</code>视频编码格式, 这是一种开源、免版税的视频编码格式, 旨在替代<code>VP9</code>和<code>H.264</code>。<code>AVIF</code>利用<code>AV1</code>的压缩技术来处理静态图像和图像序列, 提供高效的图像存储和传输。</p><h2 id="AVIF格式的特点和优势"><a href="#AVIF格式的特点和优势" class="headerlink" title="AVIF格式的特点和优势"></a>AVIF格式的特点和优势</h2><ul><li>高压缩效率: <code>AVIF</code>具有出色的压缩效率, 能够在较小的文件大小下提供优质的图像质量。这使得它在带宽和存储有限的情况下非常有用。</li><li>支持<code>HDR</code>: <code>AVIF</code>支持高动态范围<code>HDR</code>图像, 能够呈现更丰富的色彩和对比度。</li><li>色彩深度: 支持8位、10位和12位色深, 能够更好地处理复杂的色彩信息。</li><li>透明度: 支持透明度通道, 使其适用于需要透明背景的图像。</li><li>动画支持: <code>AVIF</code>支持动画, 与<code>GIF</code>和<code>APNG</code>相比, 提供了更高效的动画压缩。</li></ul><h2 id="与其他格式的比较"><a href="#与其他格式的比较" class="headerlink" title="与其他格式的比较"></a>与其他格式的比较</h2><ul><li><code>JPEG</code>: <code>AVIF</code>在相同图像质量下通常比<code>JPEG</code>文件小得多, 并且支持更高的色彩深度和透明度。</li><li><code>PNG</code>: 虽然<code>PNG</code>支持无损压缩和透明度, 但<code>AVIF</code>在有损压缩情况下提供了更小的文件大小。</li><li><code>WebP</code>: <code>AVIF</code>通常比<code>WebP</code>提供更高的压缩效率, 尤其是在处理高分辨率图像时。</li><li><code>HEIC</code>: <code>AVIF</code>与<code>HEIC</code>相似, 但<code>AVIF</code>是免版税的, 而<code>HEIC</code>可能涉及专利许可问题。</li></ul><h2 id="兼容性（截至2024年）"><a href="#兼容性（截至2024年）" class="headerlink" title="兼容性（截至2024年）"></a>兼容性（截至2024年）</h2><div class="note success no-icon % } {% label 浏览器支持 green flat"><ul><li><code>Google Chrome</code>: 支持。</li><li><code>Mozilla Firefox</code>: 支持。</li><li><code>Microsoft Edge</code>: 支持。</li><li><code>Safari</code>: 从<code>Safari 16</code>开始支持, 但支持可能不如其他浏览器全面。</li></ul></div><div class="note success no-icon % } {% label 操作系统支持 green flat"><ul><li><code>Windows</code>: <code>Windows 10</code>及以上已通过系统更新支持。</li><li><code>macOS</code>: 从<code>macOS Ventura</code>开始支持。</li><li><code>Android</code>: 较新的<code>Android</code>版本支持。</li><li><code>iOS</code>: 从<code>iOS 16</code>开始支持。</li></ul></div><p>总结<br><code>AVIF</code>作为一种现代图像格式, 提供了卓越的压缩效率和图像质量, 逐渐被主流浏览器和操作系统采纳。随着技术的进步和普及, <code>AVIF</code>有望成为广泛使用的图像格式之一。</p><h2 id="Pillow库实现AVIF格式转换"><a href="#Pillow库实现AVIF格式转换" class="headerlink" title="Pillow库实现AVIF格式转换"></a>Pillow库实现AVIF格式转换</h2><p><code>Pillow</code>是一个强大的Python图像处理库, 支持多种图像格式, 包括<code>AVIF</code>。通过<code>Pillow</code>, 可以轻松实现<code>AVIF</code>与其他图像格式的相互转换。</p><h3 id="安装Pillow库"><a href="#安装Pillow库" class="headerlink" title="安装Pillow库"></a>安装Pillow库</h3><p>在开始之前, 需要确保已安装<code>Pillow</code>库以及<code>pillow-avif-plugin</code>库。可以使用以下命令安装:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install Pillow pillow-avif-plugin</span><br></pre></td></tr></table></figure><h3 id="AVIF格式转换为其他格式"><a href="#AVIF格式转换为其他格式" class="headerlink" title="AVIF格式转换为其他格式"></a>AVIF格式转换为其他格式</h3><p>以下是一个示例, 将<code>AVIF</code>格式转换为其他格式:</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image    <span class="comment"># Pillow                    9.0.0</span></span><br><span class="line"><span class="keyword">import</span> pillow_avif       <span class="comment"># pillow-avif-plugin        1.2.2</span></span><br><span class="line"><span class="comment">#以上只是其中一个可用版本，并非必须</span></span><br><span class="line"></span><br><span class="line">AVIFfilename = <span class="string">&#x27;test.avif&#x27;</span></span><br><span class="line">AVIFimg = Image.<span class="built_in">open</span>(AVIFfilename)</span><br><span class="line"><span class="comment"># 将AVIF格式转换为JPEG格式，当然其他格式都可以</span></span><br><span class="line">AVIFimg.save(AVIFfilename.replace(<span class="string">&quot;avif&quot;</span>,<span class="string">&#x27;jpg&#x27;</span>),<span class="string">&#x27;JPEG&#x27;</span>)</span><br></pre></td></tr></table></figure><p>当然, 也可以将其他格式转为<code>AVIF</code>格式:</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image    <span class="comment"># Pillow                    9.0.0</span></span><br><span class="line"><span class="keyword">import</span> pillow_avif       <span class="comment"># pillow-avif-plugin        1.2.2</span></span><br><span class="line"><span class="comment">#以上只是其中一个可用版本，并非必须</span></span><br><span class="line"></span><br><span class="line">img_path_ = <span class="string">&quot;./test.png&quot;</span></span><br><span class="line">img = Image.<span class="built_in">open</span>(path_)</span><br><span class="line">img.save(path_.replace(<span class="string">&quot;jpg&quot;</span>,<span class="string">&#x27;avif&#x27;</span>),<span class="string">&#x27;AVIF&#x27;</span>)</span><br></pre></td></tr></table></figure><p>转换完成后，我们可以在根目录看到转换完成后的文件，文件名后缀为<code>.avif</code>。<br><img src="https://images.kimbleex.top/BlogIMG/AVIF_Pillow/converted.avif" alt="图片转换完成"></p><p>我们可以在文件管理器中比较转换前后的图片大小。<br><img src="https://images.kimbleex.top/BlogIMG/AVIF_Pillow/size_compare.avif" alt="图片大小比较"><br>可以看到，转换后的图片大小明显小于转换前的图片大小。由此可见，<code>AVIF</code>格式具有更高的压缩效率。</p><p>最后让我们从视觉上感受两张图片的差距。<br><img src="https://images.kimbleex.top/BlogIMG/AVIF_Pillow/vis_compare.avif" alt="图片对比"><br>可以看到，转换前后的图片几乎没有什么差别，说明<code>AVIF</code>格式在保持图像质量的同时，也具有很高的压缩效率。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;code&gt;AVIF (AV1 Image File Format)&lt;/code&gt;是一种现代图像格式, 基于&lt;code&gt;AV1&lt;/code&gt;视频编码技术。它由&lt;code&gt;Alliance for Open Media&lt;/code&gt;开发, 旨在提供高效的图像压缩, 同时保持优</summary>
+      
+    
+    
+    
+    <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
+    
+    
+    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
+    
+    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
