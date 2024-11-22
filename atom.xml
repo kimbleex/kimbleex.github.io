@@ -37,11 +37,11 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
     <category term="JavaScript" scheme="http://xujunliang666.com/tags/JavaScript/"/>
     
     <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -145,6 +145,8 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
+    <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
     <category term="Async" scheme="http://xujunliang666.com/tags/Async/"/>
     
     <category term="Docker" scheme="http://xujunliang666.com/tags/Docker/"/>
@@ -154,8 +156,6 @@
     <category term="Prisma" scheme="http://xujunliang666.com/tags/Prisma/"/>
     
     <category term="TypeScript" scheme="http://xujunliang666.com/tags/TypeScript/"/>
-    
-    <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -297,9 +297,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="计算机网络" scheme="http://xujunliang666.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
     <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="计算机网络" scheme="http://xujunliang666.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
@@ -326,9 +326,9 @@
     
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
-    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -521,9 +521,9 @@
     
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
-    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -551,9 +551,9 @@
     
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
-    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
