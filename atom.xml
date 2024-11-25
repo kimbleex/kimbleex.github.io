@@ -117,11 +117,11 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
+    <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
     <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
-    <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -182,11 +182,11 @@
     
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
-    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
     <category term="ChatGPT" scheme="http://xujunliang666.com/tags/ChatGPT/"/>
     
     <category term="AI" scheme="http://xujunliang666.com/tags/AI/"/>
+    
+    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
@@ -270,9 +270,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
     <category term="定时调度" scheme="http://xujunliang666.com/tags/%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6/"/>
+    
+    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
   </entry>
   
@@ -324,9 +324,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
     <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
     <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
@@ -519,9 +519,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
     <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
     <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
@@ -549,9 +549,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
     <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
     <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
@@ -663,9 +663,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Hexo" scheme="http://xujunliang666.com/tags/Hexo/"/>
-    
     <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="Hexo" scheme="http://xujunliang666.com/tags/Hexo/"/>
     
   </entry>
   
