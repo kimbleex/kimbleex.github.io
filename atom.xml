@@ -37,12 +37,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="JavaScript" scheme="http://xujunliang666.com/tags/JavaScript/"/>
-    
-    <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
   </entry>
   
   <entry>
@@ -65,10 +59,6 @@
     
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
-    
-    <category term="Linux" scheme="http://xujunliang666.com/tags/Linux/"/>
-    
-    <category term="定时调度" scheme="http://xujunliang666.com/tags/%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6/"/>
     
   </entry>
   
@@ -93,8 +83,6 @@
     <category term="Tools" scheme="http://xujunliang666.com/categories/Tools/"/>
     
     
-    <category term="工具" scheme="http://xujunliang666.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
   </entry>
   
   <entry>
@@ -117,12 +105,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
-    <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
   </entry>
   
   <entry>
@@ -144,18 +126,6 @@
     
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
-    
-    <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Async" scheme="http://xujunliang666.com/tags/Async/"/>
-    
-    <category term="Docker" scheme="http://xujunliang666.com/tags/Docker/"/>
-    
-    <category term="数据库" scheme="http://xujunliang666.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="Prisma" scheme="http://xujunliang666.com/tags/Prisma/"/>
-    
-    <category term="TypeScript" scheme="http://xujunliang666.com/tags/TypeScript/"/>
     
   </entry>
   
@@ -180,14 +150,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
-    <category term="ChatGPT" scheme="http://xujunliang666.com/tags/ChatGPT/"/>
-    
-    <category term="AI" scheme="http://xujunliang666.com/tags/AI/"/>
-    
   </entry>
   
   <entry>
@@ -211,12 +173,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="ChatGPT" scheme="http://xujunliang666.com/tags/ChatGPT/"/>
-    
-    <category term="AI" scheme="http://xujunliang666.com/tags/AI/"/>
-    
   </entry>
   
   <entry>
@@ -238,14 +194,6 @@
     
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
-    
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="Async" scheme="http://xujunliang666.com/tags/Async/"/>
-    
-    <category term="多线程" scheme="http://xujunliang666.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    <category term="多进程" scheme="http://xujunliang666.com/tags/%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
     
   </entry>
   
@@ -270,10 +218,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="定时调度" scheme="http://xujunliang666.com/tags/%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6/"/>
-    
   </entry>
   
   <entry>
@@ -296,10 +240,6 @@
     
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
-    
-    <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="计算机网络" scheme="http://xujunliang666.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
@@ -324,12 +264,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
   </entry>
   
   <entry>
@@ -353,8 +287,6 @@
     <category term="School" scheme="http://xujunliang666.com/categories/School/"/>
     
     
-    <category term="Arch Linux" scheme="http://xujunliang666.com/tags/Arch-Linux/"/>
-    
   </entry>
   
   <entry>
@@ -377,8 +309,6 @@
     
     <category term="School" scheme="http://xujunliang666.com/categories/School/"/>
     
-    
-    <category term="Arch Linux" scheme="http://xujunliang666.com/tags/Arch-Linux/"/>
     
   </entry>
   
@@ -405,8 +335,6 @@
     <category term="School" scheme="http://xujunliang666.com/categories/School/"/>
     
     
-    <category term="数据库" scheme="http://xujunliang666.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
   </entry>
   
   <entry>
@@ -430,18 +358,6 @@
     
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
-    
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="Selenium" scheme="http://xujunliang666.com/tags/Selenium/"/>
-    
-    <category term="自动化测试" scheme="http://xujunliang666.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
-    
-    <category term="爬虫" scheme="http://xujunliang666.com/tags/%E7%88%AC%E8%99%AB/"/>
-    
-    <category term="数据分析" scheme="http://xujunliang666.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
-    
-    <category term="可视化" scheme="http://xujunliang666.com/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
@@ -467,10 +383,6 @@
     <category term="School" scheme="http://xujunliang666.com/categories/School/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="Turtle" scheme="http://xujunliang666.com/tags/Turtle/"/>
-    
   </entry>
   
   <entry>
@@ -494,8 +406,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Git" scheme="http://xujunliang666.com/tags/Git/"/>
-    
   </entry>
   
   <entry>
@@ -518,12 +428,6 @@
     
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
-    
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -549,12 +453,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
   </entry>
   
   <entry>
@@ -576,14 +474,6 @@
     
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
-    
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="Selenium" scheme="http://xujunliang666.com/tags/Selenium/"/>
-    
-    <category term="自动化测试" scheme="http://xujunliang666.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
-    
-    <category term="爬虫" scheme="http://xujunliang666.com/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
@@ -608,12 +498,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="Selenium" scheme="http://xujunliang666.com/tags/Selenium/"/>
-    
-    <category term="自动化测试" scheme="http://xujunliang666.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
-    
   </entry>
   
   <entry>
@@ -637,10 +521,6 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
-    <category term="工具" scheme="http://xujunliang666.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
   </entry>
   
   <entry>
@@ -662,10 +542,6 @@
     
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
-    
-    <category term="Hexo" scheme="http://xujunliang666.com/tags/Hexo/"/>
-    
-    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
