@@ -1,11 +1,11 @@
 // pjax适配
 document.addEventListener("DOMContentLoaded", () => {
-    // cardTimes();
+    cardTimes();
     cardRefreshTimes();
 }); //第一次加载
 
 document.addEventListener("pjax:complete", () => {
-    // cardTimes();
+    cardTimes();
     cardRefreshTimes();
 }) // pjax加载完成（切换页面）后再执行一次
 
@@ -17,25 +17,6 @@ var animalYear, ganzhiYear, lunarMon, lunarDay;
 // 刷新时钟时间
 function cardRefreshTimes() {
     var cardWidgetSchedule = document.getElementById("card-widget-schedule");
-    asideTime = new Date(new Date().getFullYear() + "/01/01 00:00:00");	// 侧边栏倒计时
-    date = now.getDate();
-    month = now.getMonth();
-    week = now.getDay();
-    switch (month) {
-        case 0: monthStr = "1月"; dates = 31; break;
-        case 1: monthStr = "2月"; dates = year_flag ? 29 : 28; break;
-        case 2: monthStr = "3月"; dates = 31; break;
-        case 3: monthStr = "4月"; dates = 30; break;
-        case 4: monthStr = "5月"; dates = 31; break;
-        case 5: monthStr = "6月"; dates = 30; break;
-        case 6: monthStr = "7月"; dates = 31; break;
-        case 7: monthStr = "8月"; dates = 31; break;
-        case 8: monthStr = "9月"; dates = 30; break;
-        case 9: monthStr = "10月"; dates = 31; break;
-        case 10: monthStr = "11月"; dates = 30; break;
-        case 11: monthStr = "12月"; dates = 31; break;
-        default: console.log("异常情况");
-    }
     if (cardWidgetSchedule) {
         asideDay = (now - asideTime) / 1e3 / 60 / 60 / 24;
         cardWidgetSchedule.querySelector("#pBar_year").value = asideDay;
@@ -48,18 +29,15 @@ function cardRefreshTimes() {
         cardWidgetSchedule.querySelector("#pBar_week").value = week == 0 ? 7 : week;
         cardWidgetSchedule.querySelector("#p_span_week").innerHTML = ((week == 0 ? 7 : week) / 7 * 100).toFixed(2) + "%";
         cardWidgetSchedule.querySelector(".schedule-r2 .schedule-d1 .aside-span2").innerHTML = "还剩<a> " + (7 - (week == 0 ? 7 : week)) + " </a>天";
-        var anniversary = new Date("2025/01/28 00:00:00");
-        var countDown = Math.floor((anniversary - now) / 1e3 / 60 / 60 / 24);
-        document.getElementById("schedule-days").innerHTML = countDown; //农历
     }
 }
 // 侧边栏日历卡片
 function cardTimes() {
     year = now.getFullYear();
-    // month = now.getMonth();
-    // week = now.getDay();
-    // date = now.getDate();
-    // var cardWidgetCalendar = document.getElementById("card-widget-calendar");
+    month = now.getMonth();
+    week = now.getDay();
+    date = now.getDate();
+    var cardWidgetCalendar = document.getElementById("card-widget-calendar");
     if (cardWidgetCalendar) {
         var year_flag = year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ? true : false;
         switch (week) {
@@ -129,7 +107,7 @@ function cardTimes() {
         ganzhiYear = chineseLunar.format(lunar, "T").slice(0, -1); //天干地支
         lunarMon = chineseLunar.format(lunar, "M"); //月份
         lunarDay = chineseLunar.format(lunar, "d"); //日期
-        var anniversary = new Date("2025/01/28 00:00:00");
+        var anniversary = new Date("2025/01/29 00:00:00");
         var countDown = Math.floor((anniversary - now) / 1e3 / 60 / 60 / 24);
         asideTime = new Date(new Date().getFullYear() + "/01/01 00:00:00");	// 侧边栏倒计时
         asideDay = (now - asideTime) / 1e3 / 60 / 60 / 24;
