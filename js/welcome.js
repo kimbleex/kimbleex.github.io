@@ -57,7 +57,7 @@ const insertAnnouncementComponent = () => {
 
 // 获取 IP 信息
 const fetchIpInfo = () => {
-    fetch('https://api.76.al/api/ip/query?key=PI44tt2dN7BIyQDu9aInQAmbXh')   //修改为自己的key
+    fetch('https://api.msmao.net/api/ip/query?key=PI44tt2dN7BIyQDu9aInQAmbXh')   //修改为自己的key
         .then(response => response.ok ? response.json() : Promise.reject('网络响应不正常'))
         .then(data => {
             showWelcome(data);
