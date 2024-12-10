@@ -16,11 +16,11 @@ var animalYear, ganzhiYear, lunarMon, lunarDay;
 
 // 刷新时钟时间
 function cardRefreshTimes() {
-    var cardWidgetSchedule = document.getElementById("card-widget-schedule");
+    // var cardWidgetSchedule = document.getElementById("card-widget-schedule");
     asideTime = new Date(new Date().getFullYear() + "/01/01 00:00:00");	// 侧边栏倒计时
-    date = now.getDate();
-    month = now.getMonth();
-    week = now.getDay();
+    // date = now.getDate();
+    // month = now.getMonth();
+    // week = now.getDay();
     switch (month) {
         case 0: monthStr = "1月"; dates = 31; break;
         case 1: monthStr = "2月"; dates = year_flag ? 29 : 28; break;
