@@ -61,11 +61,11 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
+    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
     <category term="JavaScript" scheme="http://xujunliang666.com/tags/JavaScript/"/>
     
     <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -141,11 +141,11 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
+    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
     <category term="前端" scheme="http://xujunliang666.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
@@ -204,9 +204,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
     <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
     <category term="ChatGPT" scheme="http://xujunliang666.com/tags/ChatGPT/"/>
     
@@ -324,9 +324,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
-    
     <category term="定时调度" scheme="http://xujunliang666.com/tags/%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6/"/>
+    
+    <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
   </entry>
   
@@ -380,9 +380,9 @@
     
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
     <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -400,30 +400,6 @@
       
     <summary type="html">&lt;p&gt;&lt;strong&gt;本机配置：AMD核显 + NVIDIA独显&lt;/strong&gt;&lt;br&gt;成功安装了optimus-manager管理显卡驱动，它可以很好接触显卡驱动的切换.于是昨晚因为屏幕刷新率问题尝试切换startup mode.&lt;/p&gt;
 &lt;p&gt;于是尝试切换启动项显卡驱动模式</summary>
-      
-    
-    
-    
-    <category term="School" scheme="http://xujunliang666.com/categories/School/"/>
-    
-    
-    <category term="Arch Linux" scheme="http://xujunliang666.com/tags/Arch-Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>follow认证</title>
-    <link href="http://xujunliang666.com/School/Arch-GPU/"/>
-    <id>http://xujunliang666.com/School/Arch-GPU/</id>
-    <published>2023-07-02T16:00:00.000Z</published>
-    <updated>2023-07-02T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>This message is used to verify that this feed (feedId:104706146407583744) belongs to me (userId:104449330577828864). Join me in enjoying the next generation information browser <a href="https://follow.is">https://follow.is</a>.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;This message is used to verify that this feed (feedId:104706146407583744) belongs to me (userId:104449330577828864). Join me in enjoying </summary>
       
     
     
@@ -599,9 +575,9 @@
     
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
     <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -629,9 +605,9 @@
     
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
-    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
     <category term="机器学习" scheme="http://xujunliang666.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="http://xujunliang666.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
