@@ -206,11 +206,11 @@
     
     <category term="Python" scheme="http://xujunliang666.com/tags/Python/"/>
     
+    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
     <category term="ChatGPT" scheme="http://xujunliang666.com/tags/ChatGPT/"/>
     
     <category term="AI" scheme="http://xujunliang666.com/tags/AI/"/>
-    
-    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
@@ -400,6 +400,30 @@
       
     <summary type="html">&lt;p&gt;&lt;strong&gt;本机配置：AMD核显 + NVIDIA独显&lt;/strong&gt;&lt;br&gt;成功安装了optimus-manager管理显卡驱动，它可以很好接触显卡驱动的切换.于是昨晚因为屏幕刷新率问题尝试切换startup mode.&lt;/p&gt;
 &lt;p&gt;于是尝试切换启动项显卡驱动模式</summary>
+      
+    
+    
+    
+    <category term="School" scheme="http://xujunliang666.com/categories/School/"/>
+    
+    
+    <category term="Arch Linux" scheme="http://xujunliang666.com/tags/Arch-Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>follow认证</title>
+    <link href="http://xujunliang666.com/School/Arch-GPU/"/>
+    <id>http://xujunliang666.com/School/Arch-GPU/</id>
+    <published>2023-07-02T16:00:00.000Z</published>
+    <updated>2023-07-02T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>This message is used to verify that this feed (feedId:104706146407583744) belongs to me (userId:104449330577828864). Join me in enjoying the next generation information browser <a href="https://follow.is">https://follow.is</a>.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;This message is used to verify that this feed (feedId:104706146407583744) belongs to me (userId:104449330577828864). Join me in enjoying </summary>
       
     
     
@@ -717,9 +741,9 @@
     <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
     
     
-    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
     <category term="Hexo" scheme="http://xujunliang666.com/tags/Hexo/"/>
+    
+    <category term="图像处理" scheme="http://xujunliang666.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
