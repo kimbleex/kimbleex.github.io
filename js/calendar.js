@@ -107,7 +107,7 @@ function cardTimes() {
         ganzhiYear = chineseLunar.format(lunar, "T").slice(0, -1); //天干地支
         lunarMon = chineseLunar.format(lunar, "M"); //月份
         lunarDay = chineseLunar.format(lunar, "d"); //日期
-        var anniversary = new Date("2025/01/29 00:00:00");
+        var anniversary = new Date("2026/02/17 00:00:00");
         var countDown = Math.floor((anniversary - now) / 1e3 / 60 / 60 / 24);
         asideTime = new Date(new Date().getFullYear() + "/01/01 00:00:00");	// 侧边栏倒计时
         asideDay = (now - asideTime) / 1e3 / 60 / 60 / 24;
