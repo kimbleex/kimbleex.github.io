@@ -44,6 +44,33 @@
   </entry>
   
   <entry>
+    <title>Go 安装问题汇总解决</title>
+    <link href="http://xujunliang666.com/Programming/Go-Install-Problem/"/>
+    <id>http://xujunliang666.com/Programming/Go-Install-Problem/</id>
+    <published>2024-12-24T16:00:00.000Z</published>
+    <updated>2024-12-24T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>以下错误会在在官网安装完<code>Go</code>语言之后，到<code>Vscode</code>安装语言拓展，新建一个<code>.go</code>文件之后。</p><h2 id="1-无法在GOROOT或GOPATH中找到Go"><a href="#1-无法在GOROOT或GOPATH中找到Go" class="headerlink" title="1. 无法在GOROOT或GOPATH中找到Go"></a>1. 无法在GOROOT或GOPATH中找到Go</h2><p>在安装完成后，<code>vscode</code>报错无法在<code>GOROOT</code>或<code>GOPATH</code>中找到<code>Go</code>。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">failed to find the <span class="string">&quot;go&quot;</span> binary <span class="keyword">in</span> either goroot() or path()...</span><br></pre></td></tr></table></figure><p>检查系统的环境变量中的<code>GOROOT</code>和<code>GOPATH</code>，确保它们指向正确的<code>Go</code>安装目录。<br><strong>重要</strong>：重启电脑！ 重启电脑！ 重启电脑！</p><h2 id="2-无法成功安装Go插件"><a href="#2-无法成功安装Go插件" class="headerlink" title="2. 无法成功安装Go插件"></a>2. 无法成功安装Go插件</h2><p>在安装<code>Go</code>插件时，<code>vscode</code>报错无法成功安装<code>Go</code>插件。</p><p>这是代理问题，换成国内的代理即可，打开<code>CMD</code>，输入一下命令:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">go <span class="built_in">env</span> -w GO111MODULE=on</span><br><span class="line">go <span class="built_in">env</span> -w GOPROXY=https://proxy.golang.com.cn,direct</span><br></pre></td></tr></table></figure><p>重启<code>Vscode</code>即可。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;以下错误会在在官网安装完&lt;code&gt;Go&lt;/code&gt;语言之后，到&lt;code&gt;Vscode&lt;/code&gt;安装语言拓展，新建一个&lt;code&gt;.go&lt;/code&gt;文件之后。&lt;/p&gt;
+&lt;h2 id=&quot;1-无法在GOROOT或GOPATH中找到Go&quot;&gt;&lt;a href=&quot;#1-无法在</summary>
+      
+    
+    
+    
+    <category term="Programming" scheme="http://xujunliang666.com/categories/Programming/"/>
+    
+    
+    <category term="Go" scheme="http://xujunliang666.com/tags/Go/"/>
+    
+    <category term="Solutions" scheme="http://xujunliang666.com/tags/Solutions/"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于发布Python库全过程总结和踩坑记录</title>
     <link href="http://xujunliang666.com/Tools/Python-PyPI/"/>
     <id>http://xujunliang666.com/Tools/Python-PyPI/</id>
